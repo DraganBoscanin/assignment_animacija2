@@ -1,0 +1,99 @@
+
+@keyframes my-vt {
+    0% {
+        transform: scale(1,1);background-color: #474258;
+        width: 1.6px;
+    height: 1.6px;
+    }
+    100% {
+        transform: scale(103, 103);background-color: #474258;
+       
+    }
+}
+
+
+@keyframes my-vz {
+    0% {
+        transform: translateX(0px) rotate(0deg);
+        width: 200px;
+        height: 200px;
+    }
+
+    1% 10% 20% 30% 60% 90% {
+        transform: translateX(0px) rotate(1440deg);
+        width: 200px;
+        height: 200px;
+    }
+
+    100% {
+        transform: translateX(0px) rotate(10800deg);
+        width: 200px;
+        height: 200px;
+    }
+}
+
+#prvi {
+    display: flex;
+    justify-content: center;
+    margin: 80px auto;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #050210;
+    background-color: #050210;
+    padding: 48px;
+
+}
+
+#krug {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border: 0px solid #050210;
+    border-radius: 200px;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    margin-top: 40px;
+    animation-name: my-vz;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    box-shadow: -5px 5px 30px #fb5dad, 5px 0px 30px #55fb9f, 0px -5px 30px #b87aff;
+
+
+}
+
+#krug:hover {
+    animation-play-state: paused;
+}
+
+#krug_2 {
+    display: flex;
+    width: 160px;
+    height: 160px;
+    border: 1px solid black;
+    border-radius: 160px;
+    margin-left: 19px;
+    margin-top: 19px;
+    background-color: #050210;
+  
+    
+}
+#senka {
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    margin-right: 80px;
+    box-sizing: border-box;
+  
+    margin-left: 80px;
+    width: 10px;
+    height: 1.6px;
+    border: 1px solid #171423;
+    border-radius: 100%;
+   
+    animation-name: my-vt;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
